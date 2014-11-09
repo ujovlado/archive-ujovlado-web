@@ -1,0 +1,108 @@
+@import "./vendor/fontawesome/less/variables.less";
+@import "./vendor/fontawesome/less/mixins.less";
+@import "./vendor/fontawesome/less/path.less";
+@import "./vendor/fontawesome/less/core.less";
+/*
+@import "./vendor/fontawesome/less/larger.less";
+@import "./vendor/fontawesome/less/fixed-width.less";
+@import "./vendor/fontawesome/less/list.less";
+@import "./vendor/fontawesome/less/bordered-pulled.less";
+@import "./vendor/fontawesome/less/spinning.less";
+@import "./vendor/fontawesome/less/rotated-flipped.less";
+@import "./vendor/fontawesome/less/stacked.less";
+@import "./vendor/fontawesome/less/icons.less";
+*/
+
+.@{fa-css-prefix}-github:before { content: @fa-var-github; }
+.@{fa-css-prefix}-linkedin:before { content: @fa-var-linkedin; }
+.@{fa-css-prefix}-code:before { content: @fa-var-code; }
+.@{fa-css-prefix}-twitter:before { content: @fa-var-twitter; }
+
+@black: #444;
+@white: #fff;
+@blue: #1A8ECE;
+@gray: #888;
+@lightgray: #b6b6b6;
+
+.hover() {
+  background-color: @blue;
+  color: @white;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Exo', Helvetica, Arial, sans-serif;
+  padding: 1em;
+  color: @black;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 800;
+}
+
+a {
+  color: @blue;
+  text-decoration: none;
+  &:link {
+    color: @blue;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.header {
+  overflow: auto;
+  margin-bottom: 1em;
+  a {
+    font-size: 1.1em;
+    display: block;
+    border-radius: 1em;
+    background-color: @black;
+    width: 1.6em;
+    height: 1.6em;
+    line-height: 1.6em;
+    i {
+      line-height: inherit;
+    }
+    color: @white;
+    text-align: center;
+    &:hover {
+      .hover;
+    }
+  }
+  a.left {
+    float: left;
+  }
+  a.right {
+    float: right;
+    margin-left: 1em;
+  }
+}
+
+.banner {
+  text-align: center;
+  img {
+    width: 6em;
+    border-radius: 50%;
+    border: .25em solid @black;
+  }
+  a {
+    padding: 0 .1em;
+  }
+  .links a {
+    font-size: .75em;
+    border-radius: 2em;
+    padding: .5em 1em;
+    border: thin solid @lightgray;
+    color: @gray;
+    &:hover {
+      border-color: transparent;
+      .hover
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "ujovlado.sk",
+  "private": true,
+  "ignore": [
+    "node_modules",
+    "vendor"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.2.0"
+  }
+}
